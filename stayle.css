@@ -1,0 +1,168 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+background:#0f0f0f;
+border-bottom:1px solid #222;
+z-index:1000;
+}
+
+.nav-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.hero{
+padding-top:140px;
+padding-left:10%;
+padding-right:10%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.hero h2{
+color:#00bfff;
+margin-top:10px;
+}
+
+.portfolio{
+padding:100px 10%;
+text-align:center;
+}
+
+.video-container{
+max-width:900px;
+margin:40px auto;
+border-radius:12px;
+overflow:hidden;
+}
+
+video{
+width:100%;
+}
+
+.btn{
+display:inline-block;
+padding:14px 34px;
+background:#00bfff;
+color:black;
+border-radius:30px;
+text-decoration:none;
+margin-top:30px;
+}
+
+.btn:hover{
+background:white;
+}
+
+.services{
+padding:100px 10%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+.faq{
+padding:100px 10%;
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+border-bottom:1px solid #222;
+padding:20px 0;
+}
+
+.faq-question{
+background:none;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
+width:100%;
+text-align:left;
+}
+
+.faq-answer{
+display:none;
+padding-top:10px;
+color:#aaa;
+}
+
+.contact{
+text-align:center;
+padding:120px 20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:#777;
+}
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+
+nav{
+display:none;
+}
+
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
